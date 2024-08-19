@@ -2,6 +2,7 @@ import Button from '../button/Button'
 import { Link } from 'react-router-dom'
 import Container from '../container/Container'
 import { useShopingCartContext } from '../../context/ShopingCartContext'
+import './Navbar.css'
 
 function Navbar() {
 
@@ -9,31 +10,61 @@ function Navbar() {
 
 
   return (
-    <div className="h-14 border-b shadow flex items-center">
+    <div className="h-14 border-b shadow flex items-center bg-stone-950 text-white">
         <Container>
             <div className='flex justify-between flex-row-reverse items-center'>
-                <ul className='flex flex-row-reverse'>
-                    <li className='ml-4'>
-                        <Link to="/">خانه</Link> 
+
+                <div className='flex justify-end w-9 items-center ml-44'>
+                <span>MezonShikPik</span>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png' alt="" />
+                </div>
+
+                <ul className='flex flex-row-reverse justify-center'>
+                    <li className='ml-4 '>
+                        <Link className='hover-nav' to="/">خانه</Link> 
                     </li>
                     <li className='ml-4'>
-                        <Link to="/store">فروشگاه</Link>
+                        <Link className='hover-nav' to="/store">فروشگاه</Link>
+                    </li>
+                    <li className='ml-4'>
+                        <Link className='hover-nav' to="/store">درباره ما</Link>
+                    </li>
+                    <li className='ml-4 '>
+                        <Link className='hover-nav' to="/store">جدید ترین ها</Link>
                     </li>
                 </ul>
 
-                <div>
-                    <Button onClick={handleLogout}>
+
+                
+                <div className='flex'>
+                    <Link className='relative flex' to="/cart">
+                    <button>
+                        <img className='w-10'
+                        src="https://www.iconpacks.net/icons/2/free-shopping-cart-icon-2029-thumb.png" alt="" />
+                        {cartQty > 0 &&
+                        <span className=' absolute w-5 h-5 bg-red-600 flex justify-center
+                        items-center rounded-full text-white -top-1 -right-5 p-2'>{cartQty}
+                        </span>
+                        }
+                    </button>
+                    </Link>
+
+
+
+                    <div className='bg-stone-900 rounded flex justify-star ml-10 '>
+                    <Button onClick={handleLogout}
+                    className=' flex items-center bg-red-800'>
                         LogOut
                     </Button>
-                    <Link className='relative' to="/cart">
-                    <button>سبد</button>
-                    {cartQty > 0 &&
-                     <span className='absolute w-5 h-5 bg-red-600 flex justify-center
-                     items-center rounded-full text-white -top-4 -right-5 p-3'>{cartQty}
-                     </span>
-                     }
+                    <Link 
+                    className='flex items-center'
+                    to="/login">
+                        LogIn
                     </Link>
+                    </div>
                 </div>
+                
+
             </div>
         </Container>
     </div>

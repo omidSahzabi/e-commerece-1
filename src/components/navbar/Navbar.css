@@ -1,0 +1,6 @@
+.hover-nav:hover{
+    color: red;
+    text-shadow: 1px 2px rgba(255, 0, 0, 0.267) ;
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+}
