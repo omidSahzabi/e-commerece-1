@@ -1,0 +1,80 @@
+/* .hero{
+    margin-top: 5px;
+} */
+.hero img{
+    width: 1400px;
+    height: 500px;
+    filter: brightness(50%);
+}
+.swiper-pagination-testClass{
+    background-color: rgba(255, 0, 0, 0.952);
+}
+.hero-parent{
+    position: relative;
+    display: inline-block;
+}
+.hero-parent img{
+    display: block;
+    /* width: 100%;
+    height: auto; */
+}
+.hero-child{
+    position: absolute;
+    font-size: 3rem;
+    top: 80%;
+    left: 85%;
+    transform: translate(-50% , -50%) ;
+    color: rgb(255, 255, 255) ;
+}
+.hero-child-2{
+    position: absolute;
+    font-size: 3rem;
+    top: 80%;
+    left: 74%;
+    transform: translate(-50% , -50%) ;
+    color: rgba(119, 0, 0, 0.856) ;
+}
+.hero-child-3{
+    position: absolute;
+    font-size: 3rem;
+    top: 80%;
+    left: 68%;
+    transform: translate(-50% , -50%) ;
+    color: rgba(119, 0, 0, 0.856) ;
+}
+.short-story{
+    margin: 2px 10px;
+    height: 330px;
+    background-color: black;
+    margin-bottom: 20px;
+}
+.short-story h1{
+    padding-right:20px;
+    padding-top: 10px;
+    font-size: 2rem;
+    color: white;
+}
+.short-story-red{
+    color: rgba(197, 0, 0, 0.856) ;
+}
+.short-story p{
+    color:rgba(153, 153, 153, 0.795);
+    padding: 10px 30px;
+}
+.short-story button{
+    color: white;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    background-color: rgba(255, 0, 0, 0.315);
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+    border: 1px solid rgba(245, 245, 245, 0.075);
+}
+.short-story button:hover{
+    background-color: rgba(255, 0, 0, 0.788) ;
+    border: 1px solid rgba(245, 245, 245, 0.075);
+}
+.card{
+    margin: 100px;
+}
