@@ -1,0 +1,16 @@
+.category-btn{
+    background-color: rgba(12, 3, 3, 0.863);
+    color: rgb(252, 222, 222);
+    padding: 5px ;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 28px;
+}
+.title{
+    font-size: 2rem;
+}
+.products-desck{
+    border-top: 1px solid red;
+    padding-top: 20px;
+}

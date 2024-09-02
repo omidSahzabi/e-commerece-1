@@ -10,7 +10,7 @@ function Cart() {
   return (
     <div>
         <Container>
-            <div className="">
+            <div className="grid grid-cols-4">
               {
                 cartItems.map(item => (
                   <CartItem {...item} />

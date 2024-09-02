@@ -36,6 +36,8 @@ export function ShopingCartProvider({children}:IShopingCartProvider){
 
     const [cartItems ,  setCartItems] = useLocalStorage<ICartItem[]>("cartItems",[])
 
+
+
     const handleIncreaseProductQty = (id: number) => {
         setCartItems((currentItems)=> {
             let selectedItems = currentItems.find((item) => item.id == id )

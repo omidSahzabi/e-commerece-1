@@ -16,6 +16,13 @@ export async function getProduct(id: string | number ){
     return data
 }
 
+export async function getTest(){
+    const { data } = await client("/test")
+    
+    return data ;
+}
+
+
 export async function login(username: string , password : string ){
     const { data } = await client({
         method: 'POST',

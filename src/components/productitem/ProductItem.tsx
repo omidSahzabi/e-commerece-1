@@ -1,15 +1,18 @@
 import { IProduct } from "../../types/servers"
 
-type TProducItem = IProduct
+type TProductProps = {
+  product: IProduct;
+}
 
 
-function ProductItem({title,price,description,image}: TProducItem ) {
+function ProductItem({product}: TProductProps ) {
+  const {title , price , image , description} = product
   return (
-    <div className="shadow border rounded pb-2">
-        <img className="rounded-t" src={image} alt="" />
+    <div className="shadow border rounded-2xl pb-2 bg-neutral-900 h-96 w-56 text-white">
+        <img className="rounded-2xl px-1 mt-1" src={image} alt="" />
         <div className="flex justify-between flex-row-reverse px-4 mt-2">
             <h3>{title}</h3>
-            <span>{price}$</span>
+            <span className="text-red">{price}$</span>
         </div>
         <div className="px-4 mt-1">
             <p className="text-right line-clamp-2">
