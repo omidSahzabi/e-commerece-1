@@ -15,27 +15,28 @@ function Navbar() {
         <Container>
             <div className='flex justify-between flex-row-reverse items-center'>
 
-                <div className='flex justify-end items-center ml-44'>
+                <div className='flex justify-end items-center ml-36'>
                 <Link to="https://www.instagram.com/mezoneshikpik">
                     <span>مزون شیک پیک</span>
                 </Link>
                 <img src={logo} className='w-10' alt="" />
                 </div>
-
-                <ul className='flex flex-row-reverse justify-center'>
-                    <li className='ml-4 '>
+                <div className='flex justify-center'>
+                <ul className='flex flex-row-reverse justify-between'>
+                    <li className='ml-5 '>
                         <Link className='hover-nav' to="/">خانه</Link> 
                     </li>
-                    <li className='ml-4'>
+                    <li className='ml-5'>
                         <Link className='hover-nav' to="/store">فروشگاه</Link>
                     </li>
-                    <li className='ml-4'>
+                    <li className='ml-5'>
                         <Link className='hover-nav' to="/about">درباره ما</Link>
                     </li>
-                    <li className='ml-4 '>
+                    <li className='ml-5 '>
                         <Link className='hover-nav' to="/store">جدید ترین ها</Link>
                     </li>
                 </ul>
+                </div>
 
 
                 
@@ -54,15 +55,15 @@ function Navbar() {
 
 
 
-                    <div className='bg-stone-900 rounded flex justify-star ml-10 '>
+                    <div className=' rounded flex justify-star ml-10 '>
                     <Button onClick={handleLogout}
                     className=' flex items-center bg-red-800'>
-                        LogOut
+                        خروج
                     </Button>
                     <Link 
-                    className='flex items-center'
+                    className='flex items-center pl-2'
                     to="/login">
-                        LogIn
+                        ورود 
                     </Link>
                     </div>
                 </div>

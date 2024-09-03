@@ -3,4 +3,16 @@
 @tailwind utilities;
 body{
     background-color: rgb(255, 230, 230);
+    font-family: IRAN-Kharazmi;
 }
+@font-face {
+    font-family: IRAN-Kharazmi;
+    src: url("../src/fonts/IRAN\ Kharazmi.ttf") format("truetype");
+  }
+  
+  .login{
+    margin-top: 15%;
+    width: 40%;
+    margin-left: 370px;
+  }
+ 

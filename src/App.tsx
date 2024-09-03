@@ -14,23 +14,18 @@ function App() {
   const {isLogin} = useShopingCartContext()
 
   return (
-      <Layout>
+    <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Store" element={<Store />} />
           <Route path="/product/:id" element={<Product />} />
           <Route path="/about" element={<AboutUs />} />
-
-
           <Route path="/login" element={isLogin ? <Navigate to="/" /> : <Login />} />
-
-
           <Route element={<PrivteRoute />}>
             <Route path="/cart" element={<Cart />} />
           </Route>
-
         </Routes>
-      </Layout>
+    </Layout>
   )
 }
 

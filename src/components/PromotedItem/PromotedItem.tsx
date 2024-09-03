@@ -1,7 +1,8 @@
 import React from 'react'
 import { IProduct } from '../../types/servers'
 import { Link } from 'react-router-dom'
-
+import './PromotedItem.css'
+ 
 
 
 type TPromotedProductProps ={
@@ -10,7 +11,7 @@ type TPromotedProductProps ={
 
 const PromotedItem:React.FC<TPromotedProductProps>= ({product})=>{
     return(
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 p-6 bg-neutral-950 text-white text-right  rounded-lg shadow-md' >
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-3 p-6 bg-neutral-950 text-white text-right  rounded-lg shadow-md' >
             <div className='flex flex-col justify-center'>
                 <h2 className='text-2xl mb-4 font-bold'>
                     {product.title}
@@ -26,7 +27,7 @@ const PromotedItem:React.FC<TPromotedProductProps>= ({product})=>{
                  src={product.image}
                   alt="" />
             </div>
-
+            <Link to="/store" className='text-left flex justify-center items-center btn-buy'>همین حالا بخر</Link>
         </div>
     )
 }

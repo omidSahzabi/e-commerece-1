@@ -40,7 +40,7 @@ function Store() {
     <div>
       <Container>
       <div className='flex flex-row-reverse  justify-between mt-2'>
-      <h1 className='text-right mt-5 title flex text-center'>جدید ترین محصولات</h1>
+      <h1 className='text-right mt-5 title flex '>جدید ترین محصولات</h1>
       <div className='flex text-center'>
       <button className='category-btn' onClick={()=> handleCategoryChange('all')}>همه</button>
       <button className='category-btn' onClick={()=> handleCategoryChange('men')}>الگو</button>

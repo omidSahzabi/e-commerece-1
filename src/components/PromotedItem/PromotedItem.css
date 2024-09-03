@@ -1,0 +1,9 @@
+.btn-buy{
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.btn-buy:hover{
+    background-color: rgba(255, 0, 0, 0.7);
+    transition: all ease-in-out 0.2s;
+}

@@ -12,8 +12,8 @@ import {faArrowCircleRight} from '@fortawesome/free-solid-svg-icons'
 
 function Footer() {
   return (
-    <div className='w-full footer-wrap'>
-    <footer className='w-full footer'>
+    <div className='w-full footer-wrap mt-4 mb-0'>
+    <footer className='w-full footer mt-6'>
         <div className='grid grid-cols-2 '>
             <div className='mt-3 ml-4 flex'>
                 <img src={logo} alt=""

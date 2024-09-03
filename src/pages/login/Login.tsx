@@ -23,15 +23,17 @@ function Login() {
   return (
     <div>
         <Container>
-            <div className="bg-slate-300 p-12 rounded">
-                <input onChange={handleChange} type="text" placeholder='user name'
-                 name='username' value={user.username}/>
-                <input onChange={handleChange} type="password" placeholder='password'
-                 name='password' value={user.password} />
-                <Button onClick={()=> handleLogin(user.username , user.password )} >
-                    login
+            <div className="bg-stone-900 text-white p-12 rounded flex flex-col justify-center items-center m-10 login ">
+                <input onChange={handleChange} type="text" placeholder='نام کاربری'
+                 name='username' value={user.username}
+                 className='text-black text-right pr-2 mb-5'/>
+                <input onChange={handleChange} type="password" placeholder='رمز عبور'
+                 name='password' value={user.password} 
+                 className='text-black text-right pr-2'/>
+                <Button onClick={()=> handleLogin(user.username , user.password )}
+                className='mt-5'>
+                    ورود
                 </Button>
-
             </div>
         </Container>
     </div>
