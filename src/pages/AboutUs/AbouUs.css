@@ -1,0 +1,36 @@
+.about h1{
+    font-size: 2rem;
+}
+.about-story{
+    background-color: black;
+    height: 400px;
+    width: 1220px;
+    margin-left: 70px;
+    margin-top: 1rem;
+}
+.about-story h1{
+    font-size: 1.5rem;
+    padding-right:20px ;
+    padding-top: 10px;
+}
+.about h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(168, 0, 0, 0.808);
+    margin: 30px;
+    font-size: 2rem;
+}
+.about .icons{
+    width: 500px;
+    font-size: 4rem;
+    margin-left: 425px;
+    margin-bottom: 50px;
+}
+.about .icons .icon{
+    color: rgba(0, 0, 0, 0.555);
+}
+.about .icons .icon:hover{
+    color: rgb(0, 0, 0);
+    transition: all ease-in-out 0.3s;
+}

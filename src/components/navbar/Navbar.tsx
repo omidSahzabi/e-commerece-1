@@ -2,6 +2,7 @@ import Button from '../button/Button'
 import { Link } from 'react-router-dom'
 import Container from '../container/Container'
 import { useShopingCartContext } from '../../context/ShopingCartContext'
+import logo from '../../statics/img/logo.png'
 import './Navbar.css'
 
 function Navbar() {
@@ -14,9 +15,11 @@ function Navbar() {
         <Container>
             <div className='flex justify-between flex-row-reverse items-center'>
 
-                <div className='flex justify-end w-9 items-center ml-44'>
-                <span>MezonShikPik</span>
-                    <img src='https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png' alt="" />
+                <div className='flex justify-end items-center ml-44'>
+                <Link to="https://www.instagram.com/mezoneshikpik">
+                    <span>مزون شیک پیک</span>
+                </Link>
+                <img src={logo} className='w-10' alt="" />
                 </div>
 
                 <ul className='flex flex-row-reverse justify-center'>
@@ -27,7 +30,7 @@ function Navbar() {
                         <Link className='hover-nav' to="/store">فروشگاه</Link>
                     </li>
                     <li className='ml-4'>
-                        <Link className='hover-nav' to="/store">درباره ما</Link>
+                        <Link className='hover-nav' to="/about">درباره ما</Link>
                     </li>
                     <li className='ml-4 '>
                         <Link className='hover-nav' to="/store">جدید ترین ها</Link>
